@@ -4,6 +4,7 @@ import './App.css'
 import Nav from './Components/Nav';
 import SinglePlayer from './Components/SinglePlayer';
 import AllPlayers from './Components/AllPlayers';
+import PlayerForm from './Components/NewPlayerForm';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<AllPlayers/>} />
         <Route path='/SinglePlayer/:id' element={<SinglePlayer/>} />
+        <Route path='/newplayer' element={<PlayerForm />} />
      </Routes>
     </div>
      
